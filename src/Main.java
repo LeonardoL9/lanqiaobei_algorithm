@@ -2,8 +2,7 @@ package lanqiaozhenti;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-//1:无需package
-//2: 类名必须Main, 不可修改
+//第15届第二题
 
 public class Main {
  public static void main(String[] args) {
