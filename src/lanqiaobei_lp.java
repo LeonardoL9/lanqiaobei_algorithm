@@ -1,7 +1,7 @@
 package com.example.demo.commom;
 
 import java.util.Scanner;
-
+// 第十五届蓝桥杯第四题
 public class lanqiaobei_lp {
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
