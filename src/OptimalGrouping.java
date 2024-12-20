@@ -1,5 +1,6 @@
 package lanqiaozhenti;
 import java.util.*;
+//  蓝桥第五题 最优分组
 public class OptimalGrouping {
 	public static void main(String[] args) {
 		Scanner scan=new Scanner(System.in);
