@@ -12,22 +12,24 @@ public class Grouping {
 		if(k==1) {
 			System.out.println(arr[n-1]-arr[0]);
 		}
-		int max=arr[n-1]-arr[0],res=0,l=0,r=max;  //用二分查找
-		for(res=0;res<max;res++) {
+		int max=arr[n-1]-arr[0],l=0,r=max,res=max;  //用二分查找
+		while(l<=r) {
+			int mid=(l+r)/2;
 			int count=1,i=0;
-			while(i<n-1) {
-				int j;
-				for(j=i+1;j<n;j++) {
-					if(arr[j]-arr[i]>res) {
-						count++;
-						break;
-					}
+			for(int j=i+1;j<n;j++) {
+				if(arr[j]-arr[i]>mid) {
+					count++;
+					i=j;
 				}
-				i=j;
 			}
-			if(count==k)break;
+			if(count<=k) {
+				res=mid;
+				r=mid-1;
+			}
+			else {
+				l=mid+1;
+			}
 		}
 		System.out.println(res);
-		
 	}
 }
